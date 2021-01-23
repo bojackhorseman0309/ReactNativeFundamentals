@@ -11,7 +11,7 @@ apiClient.addAsyncRequestTransform(async (request) => {
   if (!authToken) {
     return;
   }
-  request.headers['x-auuth-token'] = authToken;
+  request.headers['x-auth-token'] = authToken;
 });
 
 const get = apiClient.get;
